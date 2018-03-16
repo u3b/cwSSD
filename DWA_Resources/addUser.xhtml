@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./masterTemplate.xhtml">
+
+            <ui:define name="title">
+                Add New User
+            </ui:define>
+
+            <ui:define name="subheading">
+                Add a New User
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form> 
+                    <table> 
+                        <tr><td>Name: </td><td><h:inputText value="#{theStoreBean.tempName}" id="uname" size="64" /></td></tr> 
+                        <tr><td>Max DVDs: </td><td><h:inputText value="#{theStoreBean.tempMax}" id="maxDvd" size="10" /></td></tr> 
+                        <tr><td></td><td><h:commandButton type="submit" value="Add" action="#{theStoreBean.addUser()}" /></td></tr> 
+                    </table> 
+                </h:form> 
+            </ui:define>
+
+            <ui:define name="navbar">
+                <h:link value="List Users" outcome="listUsers" /> | <h:link value="Home" outcome="index" />
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

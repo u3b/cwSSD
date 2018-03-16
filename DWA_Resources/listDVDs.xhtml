@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:composition template="./masterTemplate.xhtml">
+    <ui:define name="title">DVD List</ui:define>
+<ui:define name="subheading">Stocked DVDs</ui:define>
+<ui:define name="content">
+<table class="bordered">
+    <tr><th>Title</th><th>Rating</th><th>Availability</th></tr>
+    <ui:repeat value="" var="">
+        <tr><td></td><td></td><td></td></tr>
+    </ui:repeat>
+</table>
+</ui:define>
+<ui:define name="navbar"><h:link value="Add new DVD" outcome="addDVD" /> | <h:link value="Home" outcome="index" /></ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./masterTemplate.xhtml">
+
+            <ui:define name="title">
+                Home
+            </ui:define>
+
+            <ui:define name="subheading">
+                DVD Store Administration
+            </ui:define>
+
+            <ui:define name="content">
+                <h3>User Management</h3>
+                <hr />
+                <p><h:link value="List Users" outcome="listUsers" /></p>
+                <p><h:link value="Add a New User" outcome="addUser" /></p>
+                <br />
+                
+                <h3>DVD Management</h3>
+                <hr/>
+               <p><h:link value="List DVDs" outcome="listDVDs" /></p>
+               <p><h:link value="Add a New DVD" outcome="addDVD" /></p>
+               <p><h:link value="Loan Out a DVD" outcome="loanDVD" /></p>
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

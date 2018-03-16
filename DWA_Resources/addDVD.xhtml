@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./masterTemplate.xhtml">
+
+            <ui:define name="title">
+                Add New DVD
+            </ui:define>
+
+            <ui:define name="subheading">
+                Add a New DVD
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form> 
+                    <table> 
+                        <tr><td>Title: </td><td><h:inputText value="#{theStoreBean.tempTitle}" size="64" required="true" requiredMessage="Title is required" /></td></tr> 
+                        <tr><td>Rating: </td><td><h:inputText value="#{theStoreBean.tempRating}" size="64" required="true" requiredMessage="Rating is required" /></td></tr> 
+                        <tr><td></td><td><h:commandButton type="submit" value="Add" action="#{theStoreBean.addDvd()}" /></td></tr> 
+                    </table> 
+                </h:form> 
+            </ui:define>
+
+            <ui:define name="navbar">
+                <h:link value="List All DVDs" outcome="listDVDs" /> | <h:link value="Home" outcome="index" />
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
