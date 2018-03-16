@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	background: #c86618 url(../images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+body {
+	font: 12pt arial, sans-serif;
+	background-color: #ffffff;
+	width: 640px;
+	margin: 100px auto auto auto;
+	padding: 40px;
+	border: 4px grey solid;
+	box-shadow: 0px 0px 16px 8px #ecd0b0;
+}
+
+h1 {
+	text-shadow: 1px 1px #ecd0b0;
+	font: bold 24pt arial, sans-serif;
+}
+
+input {
+	border: 2px grey solid;
+	height: 24px;
+}
+
+table.bordered {
+	border: 2px grey solid;
+	width: 100%;
+	padding: 0px;
+	border-collapse: collapse;
+        table-layout: fixed;
+}
+
+table.bordered td {
+	border: 2px grey solid;
+}
+
+table.bordered th {
+	border: 2px grey solid;
+	background-color: #819FF7;
+}
