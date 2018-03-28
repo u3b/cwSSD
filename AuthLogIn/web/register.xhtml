@@ -3,10 +3,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="registerstyles.css"/>
     </h:head>
-    <h:body>
-        Hello from Registration page
+    <h:body class="bo_dy3">
+        
+        <h:form>  
+             
+            <p3 class="para_three">Please fill the form in below:</p3>
+            <br></br><br></br>
+     
+            <h:panelGrid columns="2" class="feild">
+               
+            <h:outputText value="Employee ID" class="employ_color"/>
+            <h:inputText value = "" />
+            <h:outputText value ="Email" class="email_color"/>
+            <h:inputText value =""/>
+            <h:outputText value="Password" class="pass_color"/>
+            <h:inputText value=""/>
+            <h:outputText value="Confirm password" class="confirm_color"/>
+            <h:inputText value=""/>
+            <br></br><br></br>
+            
+            <h:commandButton value="Register"/>
+            
+            </h:panelGrid>
+        </h:form>
+
     </h:body>
 </html>
 

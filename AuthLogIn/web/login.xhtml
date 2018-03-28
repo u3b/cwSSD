@@ -6,21 +6,27 @@
         <title>Facelet Title</title>
         <h:outputStylesheet library="css" name="styles.css"/>
     </h:head>
-    <h:body>
+
+    <h:body class="bo_dy1">
+
         <h:form>
-            <h:panelGrid columns="3">
-                <h:outputLabel value="Username"/>
-                <h:inputText value="#{bean.name}" required="true" requiredMessage="Please, fill this feild" id="username"/>
+
+            <p1 class="cred1">Please enter credentials below:</p1>
+            <br></br><br></br>
+            <h:panelGrid columns="10" class="feild">
+
+                <h:outputLabel value="Username" class="user_name"/>
+                <h:inputText value="" required="true" requiredMessage="Please, fill this feild" id="username" class="user_feild"/>
                 <h:message for="username" class="error_message"/>
-                
-                
-                <h:outputLabel value="Password"/>
-                <h:inputText value="#{bean.pass}" required="true" requiredMessage="Please, fill this feild" id="pass"/>
+
+
+                <h:outputLabel value="Password" class="pass_word"/>
+                <h:inputText value="" required="true" requiredMessage="Please, fill this feild" id="pass"/>
                 <h:message for="pass" class="error_message"/>
-                
-                
-                <h:commandButton value="Login" action="#{bean.action()}"/>
+
+                <h:commandButton value="Login" action=""/>
             </h:panelGrid>
+
         </h:form>
     </h:body>
 </html>

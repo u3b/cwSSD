@@ -1,0 +1,41 @@
+.bo_dy{
+    background-color: black;
+}
+
+
+.head1{
+    color: #299617;
+    text-align: center;
+    font-family: "Trebuchet MS";
+}
+
+.para1{
+    color: #299617;
+    font-family: "Arial";
+}
+
+.para2{
+    color: #299617;
+    border: 1px solid #299617;
+    border-radius: 2px;
+}
+
+.log_in{
+    color: #299617;
+    font-family: "Arial";
+}
+
+.reg_ister{
+    color: #299617;
+    font-family: "Arial";
+}
+
+.log_out{
+    color: #299617;
+    font-family: "Arial";
+}
+
+.fo_rum{
+    color: #299617;
+    font-family: "Arial";
+}
