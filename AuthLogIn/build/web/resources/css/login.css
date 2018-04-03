@@ -1,0 +1,25 @@
+.loginBody{
+background-color: black;
+text-align: center;
+color: #299617;
+text-align: center;
+font-family: "Trebuchet MS";    
+}
+
+.login_form{
+    color: #299617;
+    text-align: center;
+    font-family: "Trebuchet MS";
+}
+
+.head2Login{
+    color: #299617;
+    text-align: center;
+    font-family: "Trebuchet MS";
+}
+.loginText{
+    color: #299617;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    padding-top: 500px;
+}

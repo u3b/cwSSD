@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <h:outputStylesheet library="css" name="login.css"/> 
+    </h:head>
+    <body class="loginBody">
+ 
+        
+            
+                <h2 class="head2Login">Login Please:</h2>
+                
+                 
+                      
+                <h:form class="login_form">
+                    <h:outputText value="Username : "/>
+                    <h:inputText id="username" value="#{bean.username}" required="true" styleClass="input_text"/>
+                 
+                  
+                    <h:outputText value="Password : "/>
+                    <h:inputSecret id="password" value="#{bean.password}" required="true" styleClass="input_text"/>
+               
+                  
+                      
+                          <h:commandButton action="#{bean.checkForValidUser}" value="Login" type="submit"/>
+                          <h:outputLink id="regLink" value="/AuthLogIn/faces/RegisterUser.xhtml" class="reg_ister">Register User</h:outputLink><br/>
+                  
+
+                          </h:form>
+             
+                
+                <h2 class="loginText">THIS APPLICATION WAS DEVELOPED BY TEAM ARK </h2>
+                
+           
+        
+    </body>
+</html>
+
+
