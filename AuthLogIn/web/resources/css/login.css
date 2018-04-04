@@ -1,4 +1,4 @@
-.loginBody{
+[id$=loginBody]{
 background-color: black;
 text-align: center;
 color: #299617;
@@ -6,18 +6,18 @@ text-align: center;
 font-family: "Trebuchet MS";    
 }
 
-.login_form{
+[id$=login_form]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";
 }
 
-.head2Login{
+[id$=head2Login]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";
 }
-.loginText{
+[id$=loginText]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";

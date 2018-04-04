@@ -1,42 +1,41 @@
-.bo_dy3{
-    background-color: black;
-    
+[id$=registerBody] {
+    background-color: black;   
 }
 
-.employ_color{
+[id$=employ_color]{
     color: #299617;
     font-family: "Arial";
     
 }
-.email_color{
+[id$=email_color]{
     color: #299617;
     font-family: "Arial";
 }
-.pass_color{
+[id$=pass_color]{
     color: #299617; 
     font-family: "Arial";
 }
 
-.confirm_color{
+[id$=confirm_color]{
     color: #299617;
     font-family: "Arial";
 }
-.para_three{
+[id$=para_three]{
     color: #299617;
     font-family: "Arial";
     
 }
-.reg_form{
+[id$=reg_form]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";
 }
-.head2Reg{
+[id$=head2Reg]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";
 }
 
-.reg_form{
+[id$=reg_form]{
     align-content: center;
 }

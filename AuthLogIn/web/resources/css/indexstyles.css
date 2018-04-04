@@ -1,46 +1,41 @@
-.bo_dy{
+[id$=indexBody]{
     background-color: black;
 }
 
 
-.head1{
+[id$=head1]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";
 }
 
-.para1{
+[id$=para1]{
     color: #299617;
     font-family: "Arial";
 }
 
-.para2{
+[id$=para2]{
     color: #299617;
     border: 1px solid #299617;
     border-radius: 2px;
 }
 
-.log_in{
+[id$=log_in]{
     color: #299617;
     font-family: "Arial";
 }
 
-.reg_ister{
+[id$=reg_ister]{
     color: #299617;
     font-family: "Arial";
 }
 
-.log_out{
+[id$=log_out]{
     color: #299617;
     font-family: "Arial";
 }
 
-.fo_rum{
-    color: #299617;
-    font-family: "Arial";
-}
-
-.indexOption{
+[id$=indexOption]{
     color: #299617;
     text-align: center;
     font-family: "Trebuchet MS";
