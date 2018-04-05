@@ -4,39 +4,28 @@
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
     xmlns:h="http://java.sun.com/jsf/html"
     xmlns:f="http://java.sun.com/jsf/core">
+        
+        <title>Login</title>
     
     <h:head>
         <h:outputStylesheet library="css" name="login.css"/> 
     </h:head>
-    <body id="loginBody">
- 
-        
-            
-                <h2 id="head2Login">Login Please:</h2>
-                
-                 
-                      
-                <h:form id="login_form">
+    <body class="loginBody">
+
+                <h2 class="head2Login">Login Please:</h2>
+   
+                <h:form class="login_form">
                     <h:outputText value="Username : "/>
                     <h:inputText id="username" value="#{bean.username}" required="true" styleClass="input_text"/>
-                 
-                  
+    
                     <h:outputText value="Password : "/>
                     <h:inputSecret id="password" value="#{bean.password}" required="true" styleClass="input_text"/>
-               
-                  
-                      
+       
                           <h:commandButton action="#{bean.checkForValidUser}" value="Login" type="submit"/>
-                          <h:outputLink id="regLink" value="/AuthLogIn/faces/RegisterUser.xhtml" class="reg_ister">Register User</h:outputLink><br/>
+                          <h:outputLink id="regLink" value="/AuthLogIn/faces/RegisterUser.xhtml" class="reg_ister">Register User</h:outputLink>
                   
-
                           </h:form>
-             
-                
-                <h2 id="loginText">THIS APPLICATION WAS DEVELOPED BY TEAM ARK </h2>
-                
-           
-        
+ 
     </body>
 </html>
 

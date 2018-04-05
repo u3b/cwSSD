@@ -12,9 +12,20 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/src/java/project/web/bean.java</file>
-            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/Login.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/src/java/LocationCheck.java</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/adminPages/LocationData.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/index.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/Location.xhtml</file>
             <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/resources/css/login.css</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/src/java/project/web/bean.java</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/RegisterUser.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/WEB-INF/web.xml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/adminPages/IndexAdmin.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/adminPages/remove.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/Login.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/WEB-INF/faces-config.xml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/web/adminPages/register.xhtml</file>
+            <file>file:/Users/ryan/Desktop/cwSSD-master/AuthLogIn/src/java/fileUpload.java</file>
         </group>
     </open-files>
 </project-private>

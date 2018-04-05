@@ -3,9 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <title>Register</title>
-    <h:head>
-        <h:outputStylesheet library="css" name="registerstyles.css"/>
-    </h:head>
     <h:body class="bo_dy3">
         
         <h2 class="head2Reg">Register User:</h2>
@@ -13,15 +10,14 @@
        <h:form class="reg_form">
                     <h:outputText value="Username : "/>
                     <h:inputText id="username" value="#{bean.username}" required="true" styleClass="input_text"/>
-
+       
                     <h:outputText value="Password : "/>
-                    <h:inputSecret id="password" value="#{bean.password}" required="true" styleClass="input_text" />
-                    <h1>You're Registering a user account!</h1>
+                    <h:inputSecret id="password" value="#{bean.password}" required="true" styleClass="input_text"/>
+               
+                    <h1>You're Registering a Staff level, for regular use add from the home page</h1>
                       
-                    <h:commandButton action="#{bean.databaseDataInsertUser}" value="Register" type="submit"/>
-
+                    <h:commandButton action="#{bean.databaseDataInsertAdmin}" value="Register" type="submit"/>
         </h:form>
-
     </h:body>
 </html>
 

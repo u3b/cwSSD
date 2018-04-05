@@ -23,15 +23,33 @@
         <navigation-case>
             <from-action>#{bean.checkForValidUser}</from-action>
             <from-outcome>2</from-outcome>
-            <to-view-id>IndexAdmin.xhtml</to-view-id>
+            <to-view-id>/adminPages/IndexAdmin.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-action>#{bean.checkForValidUser}</from-action>
             <from-outcome>0</from-outcome>
             <to-view-id>Login.xhtml</to-view-id>
         </navigation-case>
+        
  
     </navigation-rule>
+    <navigation-rule>
+        
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-action>#{LocationCheck.checkForLocation}</from-action>
+            <from-outcome>true</from-outcome>
+            <to-view-id>/Location.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-action>#{LocationCheck.checkForLocation}</from-action>
+            <from-outcome>false</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+   
+    </navigation-rule>
+    
+   
     
     
 </faces-config>

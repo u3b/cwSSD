@@ -1,31 +1,32 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
    
     <h:head>
         <h:outputStylesheet library="css" name="indexstyles.css"/> 
-        <h:outputScript library="js" name="menu.js" />
+        
     </h:head>
-    
-    <h:body id="indexBody_2">
+    <h:body class="bo_dy">
         
-        <h1 id="head1">-- POLICING DATABASE V.0.2 user--</h1>
-        <div id="indexOption">
-           
-                <h:outputText value="Welcome to the system #{bean.username}, please use with care. Options are below: " escape="false"/>
+        <h1 class="head1">-- POLICING DATABASE V.0.3 User--</h1>
+        <div class="indexOption">
+  
+                <h:outputText value="Welcome to the system #{bean.username}, please use with care. Options are below: " escape="true"/>
+
+        <h:form>
             
-        <br></br><br></br>
+            <h:outputText value="Input a Location"/>
+            <h:inputText id="Location" value="#{LocationCheck.local}" required="true" styleClass="input_text"/>
+            <h2 style="text-align: center">Use our new Location checker, for Updates!</h2>
+            <h:commandButton action="#{LocationCheck.checkForLocation}" value="Search Location" type="submit"/>
+            
+        </h:form>
+
+     
         
-        
-       
-        
-       
-       
-       
-        <br></br>
-        
-        <p2 index="para2">DISCLAIMER: Data and information held within this database is extremely sensitive. Any misuse of this data will result in prosecution!</p2>
+        <p2 class="para2">DISCLAIMER: Data and information held within this database is extremely sensitive. Any misuse of this data will result in prosecution!</p2>
          </div>
     </h:body>
 </html>
